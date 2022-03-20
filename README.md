@@ -4,16 +4,30 @@
 
 teai_pracadomowatydzien3
 
+Adnotacje SpringBoot: 
+@RequestMapping, 
+@GetMapping("/{id}")    -> getCarsById(@PathVariable...) oraz getCarsByKolor(@RequestParam...) 
+@PostMapping            -> addCar(@RequestBody...)
+@PutMapping             -> modCarsById(@RequestBody...)
+@DeleteMapping("/{id}") -> removeCar (@PathVariable...)
+@PatchMapping("/{id}")  -> modifyCarField(@PathVariable int id,  @RequestBody Map<Object, Object> carFields)
+
 Car Api dla Modułu 3 Akadmia Spring
 Akademia Spring modol 3 - REST API dla listy pojazdów
 
 Pojazd - pola: id, mark, model, color. API obsługuje metody webowe: 
-GET: getCars, 
+GET: getCars,   - 
+
 GET: getCarsById, 
-GET: getByColor, 
+
+GET: getByColor,
+
 POST addCar 
+
 PUT modCarsById
+
 PATCH modifyCarField, 
+
 DELETE: removeCar,
 
 Przy starcie aplikacji mają dodawać się 3 pozycje.
